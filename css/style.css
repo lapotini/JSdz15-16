@@ -47,11 +47,9 @@ border: 1px solid #4285f4;
 .resultBox{
   width: 85%;
   height: 750px;
-
-    padding: 10px 50px 50px 90px;
-
-
+  padding: 10px 50px 50px 90px;
 }
+
 
 
 
@@ -66,4 +64,5 @@ border: 1px solid #4285f4;
 }
 .image{
   max-height: 300px;
+
 }

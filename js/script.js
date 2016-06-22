@@ -14,7 +14,9 @@ function Worker(placeOfWork){
   this.zp = 2000;
   this.work = function(){
     console.log('I am working');
+
   };
+
 }
 
 function Student() {
@@ -22,7 +24,9 @@ function Student() {
   this.grant = 100;
   this.action = function(){
     console.log('watch TV');
+
   };
+
 }
 
 var human1 = new Human();
@@ -49,8 +53,8 @@ student1.action();
 // //////////////////////////////////////////////////////////////////////////////////
 // SEARCH
 $( document ).ready(function() {
-  $('#searchField').val('');
 
+  $('#searchField').val('');
 
   $('#searchButton').on('click', function() {
     search();
@@ -60,15 +64,16 @@ $( document ).ready(function() {
   $(document).on('keydown', function(e) {
     if (e.keyCode == 13) {
       search();
+
       return false;
     }
   });
 
 
 
-
   function search(){
     var API_KEY = '2612659-a06243bff7542cbcab6fc731d';
+
     var query = $('#searchField').val();
       // console.log(query);
     $('.resultList').children().remove();
@@ -76,6 +81,7 @@ $( document ).ready(function() {
     if (query.length > 0) {
 
       $.ajax({
+
         url: "https://pixabay.com/api/?key="+API_KEY+"&q="+encodeURIComponent(query),
         dataType: 'json',
         success: function(data){
@@ -104,8 +110,5 @@ $( document ).ready(function() {
 
 
 
-
-
 });
-
 
